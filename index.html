@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flowers Store</title>
+    <style>
+    body{
+        font-family: "Calibri";
+    }
+    .document{
+        margin: 0 auto;
+        max-width:1020px;
+        background: #fff;
+        font-size: 20px;
+    }
+    .item-image{
+        border: 10px solid #eee;
+        display: inline-grid;
+        position: relative;
+    }
+    .item-name{
+        padding-top: 10px;
+        text-align: left;
+        color: #201e23;
+    }
+    .item{
+        max-width:220px;
+        display: inline-block;
+        margin:15px;
+    }
+    .add-button{ 
+        float:right;
+        background: #eee;
+        border: 2px solid #f14a65;
+        border-radius: 2px;
+        padding:3px 8px 3px 8px;
+        font-size: 15px;
+        outline:none;
+    }
+    .added-button{ 
+        float:right;
+        background: #eee;
+        border: 2px solid #ffcad3;
+        border-radius: 2px;
+        padding:3px 8px 3px 8px;
+        font-size: 15px;
+        outline:none;
+        color: #555;
+    }
+    .cart{
+        position: fixed;
+        bottom: 20px;
+        right: 80px;
+        background: #eee;
+        padding:15px 10px 5px 10px;
+        border: 2px solid #f14a65;
+        border-radius: 10px; 
+    }
+    .cart-count{
+        position: absolute;
+        top:-7px;
+        right: -7px;
+        font-size: 20px;
+        color: #201e23;
+        border: 2px solid #f14a65;
+        background: #f14a65;
+        height:20px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        width:20px;
+        border-radius: 50%;
+    }
+    .price{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #f14a65;
+        color: #fff;
+        padding: 2px 5px;
+        border-radius: 0px 0px 0px 10px;
+    }
+    </style>
+</head>
+<body>
+    <img src="images/left.png" alt="" height="200px" align="left">
+    <img src="images/right.png" alt="" height="200px" align="right">
+    <h1 align="center"><font size="7" color="#f14a65"><br> Welcome to Flowers.io </font></h1> 
+    <br>
+    <div class="document">
+    <p align=center>We Sell a Lots of Flowers Here and We Deliver them on Your Doorsteps 🛵.</p>
+        <div class="item">
+            <div class="item-image">
+                <img src="images/1.jpg" alt="" height="200px">
+                <div class="price">₹ 1,200</div>
+            </div>
+            <div class="item-name">
+                <span>Roses Bulk</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/2.jpg" alt="" height="200px">
+                <div class="price">₹ 1,800</div>
+            </div>
+            <div class="item-name">
+                <span>Colorful Roses</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/3.jpg" alt="" height="200px">
+                <div class="price">₹ 1,600</div>
+            </div>
+            <div class="item-name">
+                <span>Blue Heaven</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/4.jpg" alt="" height="200px">
+                <div class="price">₹ 1,000</div>
+            </div>
+            <div class="item-name">
+                <span>Yellow Roses</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/5.jpg" alt="" height="200px">
+                <div class="price">₹ 1,200</div>
+            </div>
+            <div class="item-name">
+                <span>Bouquet</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/6.jpg" alt="" height="200px">
+                <div class="price">₹ 1,200</div>
+            </div>
+            <div class="item-name">
+                <span>Sunflowers</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/7.jpg" alt="" height="200px">
+                <div class="price">₹ 1,600</div>
+            </div>
+            <div class="item-name">
+                <span>Roses Bulk</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/8.jpg" alt="" height="200px">
+                <div class="price">₹ 1,800</div>
+            </div>
+            <div class="item-name">
+                <span>Lovely Roses</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/9.jpg" alt="" height="200px">
+                <div class="price">₹ 1,400</div>
+            </div>
+            <div class="item-name">
+                <span>Roses Bulk</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/10.jpg" alt="" height="200px">
+                <div class="price">₹ 1,200</div>
+            </div>
+            <div class="item-name">
+                <span>Pink Magic</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/11.jpg" alt="" height="200px">
+                <div class="price">₹ 1,000</div>
+            </div>
+            <div class="item-name">
+                <span>Sorry Rose</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="item-image">
+                <img src="images/12.jpg" alt="" height="200px">
+                <div class="price">₹ 2,000</div>
+            </div>
+            <div class="item-name">
+                <span>Propose Rose</span><button class="add-button" onclick="addtoCart(this)">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="cart.html">
+    <div class="cart">
+        <div class="cart-count" id="total-items">
+            0
+        </div>
+        <div class="cart-image">
+            <img src="images/shopping-cart.png" width="40px">
+        </div>
+    </div>
+    </a>
+<br><br><br><br><br><br><br>
+</body>
+
+<script>
+function addtoCart(param){
+    param.innerHTML = "Added"
+    param.setAttribute("class", "added-button")
+
+    setTimeout(
+        function(){
+            param.innerHTML = "Add to Cart"
+            param.setAttribute("class", "add-button")
+        }
+    ,3000)
+
+    document.getElementById("total-items").innerHTML = parseInt(document.getElementById("total-items").innerHTML)+1;
+}
+</script>
+</html>

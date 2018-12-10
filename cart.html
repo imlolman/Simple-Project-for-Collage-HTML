@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flowers Store</title>
+    <style>
+        body {
+            font-family: "Calibri";
+        }
+
+        .document {
+            margin: 0 auto;
+            max-width: 1020px;
+            background: #fff;
+            font-size: 20px;
+        }
+
+        .item-image {
+            border: 10px solid #eee;
+            display: inline-grid;
+        }
+
+        .item-name {
+            padding-top: 10px;
+            text-align: left;
+            color: #201e23;
+        }
+
+        td,
+        th {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .total>td {
+            border-top: 3px dashed #f14a65;
+            border-bottom: 3px dashed #f14a65;
+            padding: 30px 0px;
+        }
+
+        .continue-btn-div {
+            position: absolute;
+            right: 100px;
+        }
+
+        .continue-btn {
+            border: 0px;
+            background: #f14a65;
+            color: #fff;
+            padding: 7px 15px;
+            font-size: 20px;
+            box-shadow: 2px 2px 3px #f14a65;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/left.png" alt="" height="200px" align="left">
+    <img src="images/right.png" alt="" height="200px" align="right">
+    <h1 align="center">
+        <font size="7" color="#f14a65"><br> Welcome to Flowers.io </font>
+    </h1>
+    <br>
+    <div class="document">
+        <p align=center>You have 3 items in Your Cart 🛒.</p>
+        <br>
+        <table style="width:100%">
+            <tr>
+                <th> Image </th>
+                <th> Item name </th>
+                <th> Quantity </th>
+                <th> Price </th>
+            </tr>
+            <tr>
+                <td> <div class="item-image"><img src="images/4.jpg" alt="" height="100px"></div> </td>
+                <td> The Yellow Pack </td>
+                <td> 1 </td>
+                <td> ₹ 1,200 </td>
+            </tr>
+            <tr>
+                <td> <div class="item-image"><img src="images/5.jpg" alt="" height="100px"></div> </td>
+                <td> Fancy Bouquot </td>
+                <td> 1 </td>
+                <td> ₹ 1,600 </td>
+            </tr>
+            <tr>
+                <td> <div class="item-image"><img src="images/8.jpg" alt="" height="100px"></div> </td>
+                <td> Handful of Colours </td>
+                <td> 1 </td>
+                <td> ₹ 1,400 </td>
+            </tr>
+            <tr class="total">
+                <td> Total Items </td>
+                <td> 3 Lovely Flowers 💕 💐 </td>
+                <td> 3 </td>
+                <td> ₹ 4,200 </td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="continue-btn-div">
+            <a href="address.html"><button class="continue-btn">Continue ⇒</button></a>
+        </div>
+    </div><br><br><br>
+    </div>
+
+</html>
